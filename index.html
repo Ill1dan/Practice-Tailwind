@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a0d75a546.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <link rel="icon" href="adidas.png" type="image/x-icon"/>
+</head>
+<body>
+    <header class="w-full h-[80vh] relative flex flex-col">
+        <img src="background.jpg" alt="background" class="w-full h-full object-cover absolute z-0 grayscale-[30%]">
+        <nav class="z-10 relative lg:flex justify-around basis-[15%] max-[1023px]:hidden">
+            <img src="adidas.png" alt="adidas" class="w-32 h-32 object-cover cursor-pointer">
+            <div>
+                <ul class="flex font-bold items-center h-full gap-10 text-white text-sm cursor-pointer">
+                    <li class="text-yellow-500 hover:text-yellow-500 duration-200 ease-in-out tracking-widest">
+                        HOME
+                    </li>
+                    <li class="group hover:text-yellow-500 duration-200 ease-in-out tracking-widest relative">
+                        PAGES
+                        <div class="flex items-center absolute text-white bg-gray-900 cursor-default w-36 top-10 duration-1000 opacity-0 ease-in-out h-0 overflow-hidden group-hover:h-[16rem] group-hover:px-8 group-hover:opacity-100">
+                            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">About Us</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Our Team</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Contact</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">FAQ</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Coming Soon</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">404</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="group hover:text-yellow-500 duration-200 ease-in-out tracking-widest relative">
+                        DESTINATIONS
+                        <div class="flex items-center absolute text-white bg-gray-900 cursor-default w-40 top-10 duration-1000 opacity-0 ease-in-out h-0 overflow-hidden group-hover:h-28 group-hover:px-8 group-hover:opacity-100">
+                            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Destination List</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Destination Item</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="group hover:text-yellow-500 duration-200 ease-in-out tracking-widest relative">
+                        TOURS
+                        <div class="flex items-center absolute text-white bg-gray-900 cursor-default w-40 top-10 duration-1000 opacity-0 ease-in-out h-0 overflow-hidden group-hover:h-32 group-hover:px-8 group-hover:opacity-100">
+                            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Tour Single</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Tour Lists</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Dashboard</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="group hover:text-yellow-500 duration-200 ease-in-out tracking-widest relative">
+                        BLOG
+                        <div class="flex items-center absolute text-white bg-gray-900 cursor-default w-40 top-10 duration-1000 opacity-0 ease-in-out h-0 overflow-hidden group-hover:h-32 group-hover:px-8 group-hover:opacity-100">
+                            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Standard List</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Mansonary List</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Single</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="group hover:text-yellow-500 duration-200 ease-in-out tracking-widest relative">
+                        SHOP
+                        <div class="flex items-center absolute text-white bg-gray-900 cursor-default w-40 top-10 duration-1000 opacity-0 ease-in-out h-0 overflow-hidden group-hover:h-32 group-hover:px-8 group-hover:opacity-100">
+                            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">List</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Single</li>
+                                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Shop Pages</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="group hover:text-yellow-500 duration-200 ease-in-out tracking-widest relative" id="element">
+                        ELEMENTS
+                    </li>
+                    <div class="flex gap-6 text-lg items-center cursor-default">
+                        <i class="fa-regular fa-clipboard cursor-pointer hover:text-yellow-500 duration-200 ease-in-out relative after:content-['0'] after:text-xsm after:absolute after:top-[-0.5rem] after:w-4 after:h-4 after:bg-yellow-500 after:rounded-full after:flex after:items-center after:justify-center after:right-[-0.5rem] after:text-white"></i>
+                        <i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-yellow-500 duration-200 ease-in-out"></i>
+                        <div class="w-10 h-8 bg-yellow-500 flex items-center justify-center cursor-pointer hover:bg-slate-900 duration-200 ease-in-out">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <section class="z-10 relative lg:hidden basis-[15%] max-[1023px]:flex bg-slate-50 items-center">
+            <div class="cursor-pointer ml-20">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </div>
+            <img src="adidas.png" alt="adidas" class="w-24 h-24 object-cover cursor-pointer absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        </section>
+        <div class="flex justify-center gap-80 absolute text-white bg-gray-900 cursor-default w-full h-0 top-28 duration-1000 ease-in-out overflow-hidden z-20 opacity-0" id="elementResult">
+            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                <li class="text-white font-serif text-base font-semibold">Featured</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Tour List Standard</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Tour List Gallery</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Tour List Masonry</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Tour Carousel</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Tour Filter</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Destination List</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Parallax Sections</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Video Button</li>
+            </ul>
+            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                <li class="text-white font-serif text-base font-semibold">Classic</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Accordions & Toogles</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Tabs</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Buttons</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Icon With Text</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Icon List</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Google Maps</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Contact Form</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Clients</li>
+            </ul>
+            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                <li class="text-white font-serif text-base font-semibold">Infographic</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Counters</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Countdown</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Progress Bar</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Blog List</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Team</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Top Reviews</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Call To Action</li>
+            </ul>
+            <ul class="grid gap-4 text-sm font-normal tracking-normal text-gray-300">
+                <li class="text-white font-serif text-base font-semibold">Typography</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Headings</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Columns</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Blockquote</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Dropcaps</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Highlights</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Separators</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Title & Subtitle</li>
+                <li class="cursor-pointer hover:text-yellow-500 duration-200 ease-in-out">Custom Font</li>
+            </ul>
+        </div>
+        <div class="basis-[85%] flex items-center justify-center flex-col">
+            <h1 class="relative text-center text-[5rem] font-extrabold font-serif text-white">Your Journey Begins</h1>
+            <h3 class="relative text-center text-pretty text-xl font-bold text-white">A journey of 1000 miles starts with a single step. Import the full demo content with 1 click <br> and create a head-turning website for your travel agency</h3>
+            <div class="mt-16 relative w-[60%] bg-slate-50 h-24 flex px-10 py-6 min-w-[56rem]">
+                <div class="border-slate-200 border-2 border-r-0 grid items-center px-4 pl-10 relative cursor-pointer flex-[60%] shrink">
+                    <i class="fa-solid fa-location-dot absolute left-5 text-yellow-500"></i>
+                    <input type="text" placeholder="WHERE TO?" class="outline-none bg-slate-50 placeholder:text-slate-700 placeholder:font-semibold placeholder:text-sm w-full">
+                </div>
+                <div class="cursor-pointer border-slate-200 border-2 border-r-0 grid items-center relative flex-[60%] shrink">
+                    <i class="fa-regular fa-calendar absolute left-5 text-yellow-500"></i>
+                    <input type="text" placeholder="WHEN?" class="outline-none bg-slate-50 px-4 pl-12 placeholder:text-slate-700 placeholder:font-semibold placeholder:text-sm w-full">
+                </div>
+                <div class="cursor-pointer border-slate-200 border-2 border-r-0 grid items-center relative flex-[60%] shrink">
+                    <i class="fa-solid fa-flag absolute left-5 text-yellow-500"></i>
+                    <input type="text" placeholder="TRAVEL TYPE?" class="outline-none bg-slate-50 px-4 pl-12 placeholder:text-slate-700 placeholder:font-semibold placeholder:text-sm w-full">
+                </div>
+                <div class="cursor-pointer flex items-center justify-center bg-yellow-500 w-full text-white text-sm font-bold hover:bg-slate-900 duration-200 ease-in-out">
+                    FIND NOW
+                </div>
+
+            </div>
+        </div>
+    </header>
+</body>
+</html>
